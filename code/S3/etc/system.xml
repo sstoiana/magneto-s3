@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<system>
+			<groups>
+				<media_storage_configuration>
+					<fields>
+						<media_storage translate="label">
+                            <source_model>s3/system_config_source_storage_media_storage</source_model>
+                        </media_storage>
+						<media_database translate="label">
+                            <label>S3 Media Bucket</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_storage_media_database</backend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><media_storage>1</media_storage></depends>
+                        </media_database>
+                        
+                        <media_s3_access_key_id translate="label">
+                            <label>Access Key ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><media_storage>1</media_storage></depends>
+                        </media_s3_access_key_id>
+                        <media_s3_secret_access_key translate="label">
+                            <label>Secret Access Key</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><media_storage>1</media_storage></depends>
+                        </media_s3_secret_access_key>
+                        
+					</fields>
+				</media_storage_configuration>
+			</groups>
+		</system>
+	</sections>
+</config>

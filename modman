@@ -1,0 +1,3 @@
+code/S3 app/code/community/Magneto/S3
+Magneto_S3.xml app/etc/modules/Magneto_S3.xml
+s3get.php s3get.php
