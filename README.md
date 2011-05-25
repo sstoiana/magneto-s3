@@ -18,7 +18,7 @@ sudo mv modman /usr/bin
 <pre>
 cd <magento root folder>
 modman init
-modman magneto-debug clone https://github.com/sstoiana/magneto-s3.git
+modman magneto-s3 clone https://github.com/sstoiana/magneto-s3.git
 </pre>
  - Make sure you've cleaned Magento's cache to enable the new module
  - The extension configuration is under System / Configuration > Advanced / System > Storage Configuration for Media
